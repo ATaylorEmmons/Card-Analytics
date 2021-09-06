@@ -1,7 +1,8 @@
 
 import requests
 
-
+#Forms an asynch request to download an html file
+# containing the card data.
 
 url = "https://gwent.one/search/ajax"
 
