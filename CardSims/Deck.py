@@ -1,9 +1,11 @@
 import numpy as np;	
 
+#A utility class to simulate card games
+
 class Deck:
 	
 	
-
+	#_replace = true means that a draw card is returned after beign drawn
 	def __init__(self, _replace):
 	
 		self.cards = np.arange(1, 53);
