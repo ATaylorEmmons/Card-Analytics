@@ -6,9 +6,11 @@ from pprint import pprint
 html_doc = open("cardsHtml.html").read();
 soup = BeautifulSoup(html_doc, 'html.parser')
 
+#Uses the html file downloaded from "request.py" to take card data and
+# convert it to a .json format
 
 
-
+#Each card is contained in a card data div tag
 cards_html = soup.findAll("div", {"class" : "card-wrap card-data"});
 
 cardList = []
